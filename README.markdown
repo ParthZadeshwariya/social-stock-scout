@@ -3,21 +3,21 @@
 ## Overview
 The *Social Stock Scout Dashboard* is an innovative AI-powered solution developed by Team MarketGuard AI for the SEBI Hackathon 2025, held on September 5, 2025. Designed to combat stock market fraud, it monitors X/Twitter in real-time to detect fake stock tips and manipulative schemes, such as pump-and-dump scams. By leveraging advanced Natural Language Processing (NLP), the dashboard analyzes up to 1,000 posts based on a single user-entered keyword (e.g., “NiftyBuy”), flagging suspicious phrases like “guaranteed returns.” The prototype, accessible at [https://social-stock-scout.lovable.app/](https://social-stock-scout.lovable.app/), features a user-friendly interface, demo mode for pre-processed data, and a scalable architecture to empower SEBI and protect investors. **Note**: The prototype is not yet implemented; all data is for representational purposes only.
 
-![Project Overview](docs/images/image1.png)
+![Project Overview](assets/image1.png)
 
 *Image: Overview of the Social Stock Scout Dashboard, showcasing the landing page with Team MarketGuard AI’s mission.*
 
 ## Problem Statement
 Social media platforms like X/Twitter are breeding grounds for fraudulent stock tips, enabling scams that deceive retail investors and undermine trust in India’s financial ecosystem. Unauthorized tipsters use manipulative phrases like “guaranteed returns” or “insider tips” to orchestrate schemes, leading to significant financial losses. This poses a critical challenge for SEBI’s regulatory oversight, as the rapid spread of misinformation threatens market stability. Real-time, AI-driven tools are urgently needed to monitor and detect fraudulent content, ensuring investor confidence and a fair trading environment.
 
-![Fraudulent Stock Tips](docs/images/image2.png)
+![Fraudulent Stock Tips](assets/image2.png)
 
 *Image: Example of a fraudulent stock tip on X/Twitter, highlighting manipulative language.*
 
 ## Proposed Solution
 The *Social Stock Scout Dashboard* is a cutting-edge market surveillance tool designed to identify fake stock tips and fraudulent schemes on X/Twitter. Users input a single keyword (e.g., “RelianceBuy”), and the system analyzes up to 1,000 posts using AI-driven NLP to flag suspicious content. It delivers risk scores, flagged posts, and summary statistics, enabling swift action by regulators and investors. The solution’s innovation lies in its real-time AI analysis, user-friendly interface, and demo mode for instant insights, tailored for SEBI’s regulatory needs with potential for multi-platform expansion.
 
-![Dashboard Workflow](docs/images/image3.png)
+![Dashboard Workflow](assets/image3.png)
 
 *Image: Diagram illustrating the workflow of keyword input to fraud detection output.*
 
@@ -30,9 +30,6 @@ The *Social Stock Scout Dashboard* prototype, accessible at [https://social-stoc
 - **User Experience**: Clean, intuitive UI designed for SEBI regulators, investors, and analysts.
 The prototype is limited to X/Twitter and a 1,000-post cap due to hackathon constraints but is built on a scalable architecture. **Note**: The prototype is not yet implemented; data is for demonstration purposes.
 
-![Prototype Screenshot](docs/images/image4.png)
-
-*Image: Screenshot of the Social Stock Scout Dashboard prototype, showing the keyword input UI.*
 
 ## Key Features
 - **Real-Time Analysis**: Monitors up to 1,000 X/Twitter posts for fake stock tips.
@@ -41,7 +38,7 @@ The prototype is limited to X/Twitter and a 1,000-post cap due to hackathon cons
 - **Demo Mode**: Allows exploration of pre-processed data for quick insights.
 - **Scalable Design**: Supports future multi-platform integration and visualizations.
 
-![Feature Showcase](docs/images/image5.png)
+![Feature Showcase](assets/image4.png)
 
 *Image: Visual representation of key features, highlighting AI detection and demo mode.*
 
@@ -50,30 +47,14 @@ The prototype is limited to X/Twitter and a 1,000-post cap due to hackathon cons
 - **Retail Investors**: To avoid scams and make informed investment decisions.
 - **Financial Analysts**: For actionable insights into market trends and manipulations.
 
-![User Profiles](docs/images/image6.png)
-
-*Image: Icons representing SEBI regulators, retail investors, and financial analysts.*
-
 ## Functionality
 The *Social Stock Scout Dashboard* enables users to input a single keyword through a streamlined web interface. The system scrapes X/Twitter posts (using a mock API for the prototype) and employs AI to analyze content, assigning risk scores to identify fraudulent posts. Results, including flagged posts and summary statistics, are displayed clearly, empowering users with actionable insights. The dashboard is accessible at [https://social-stock-scout.lovable.app/](https://social-stock-scout.lovable.app/).
-
-![Functionality Flow](docs/images/image7.png)
-
-*Image: Flowchart showing the process from keyword input to result display.*
 
 ## Key Innovation / Differentiator
 The *Social Stock Scout Dashboard* stands out due to its AI-powered, real-time fraud detection system, leveraging advanced NLP to identify manipulative stock tips on X/Twitter. Its user-friendly interface simplifies market surveillance with a single-keyword input, analyzing up to 1,000 posts efficiently. The unique demo mode enables instant access to pre-processed data, ideal for hackathon evaluations. Built for SEBI’s regulatory needs, it offers scalability for multi-platform expansion and future xAI API integration (https://x.ai/api), setting it apart as a tailored, impactful tool for enhancing market integrity and protecting investors.
 
-![Innovation Highlight](docs/images/image8.png)
-
-*Image: Graphic emphasizing AI-driven fraud detection and scalability.*
-
 ## Technology Stack
 The *Social Stock Scout Dashboard* is built on a robust, scalable technology stack optimized for market surveillance. It leverages AI and Machine Learning through Natural Language Processing (NLP) via the xAI API (https://x.ai/api) for real-time fraud detection, analyzing social media posts for suspicious patterns like “guaranteed returns.” TypeScript and JavaScript drive dynamic functionality, while Next.js powers a responsive, scalable frontend. A mock API supports the hackathon prototype, with plans for xAI API integration for advanced analysis. The dashboard is deployed on Vercel for seamless, cloud-based access, utilizing Tailwind CSS for modern styling and potentially Recharts for sentiment visualizations. Cloud-based infrastructure minimizes local hardware requirements, ensuring accessibility and efficiency.
-
-![Tech Stack Diagram](docs/images/image9.png)
-
-*Image: Diagram of the technology stack, highlighting Next.js, xAI API, and Vercel.*
 
 ## Feasibility and Risk Mitigation
 ### Challenges and Risks
@@ -90,7 +71,7 @@ The *Social Stock Scout Dashboard* is built on a robust, scalable technology sta
 
 The prototype is feasible, aligns with SEBI’s regulatory goals, and is built for scalability.
 
-![Risk Mitigation](docs/images/image10.png)
+![Risk Mitigation](/assets/image6.png)
 
 *Image: Table or graphic summarizing challenges and mitigation strategies.*
 
@@ -103,9 +84,6 @@ The *Social Stock Scout Dashboard* delivers transformative benefits:
 
 Its scalable design supports broader fraud prevention, contributing to a safer, more transparent stock market ecosystem in India.
 
-![Impact Benefits](docs/images/image11.png)
-
-*Image: Infographic showing social, economic, and regulatory benefits.*
 
 ## Future Roadmap
 - **Enhanced AI**: Integrate xAI API for deeper, more accurate fraud detection.
@@ -115,10 +93,7 @@ Its scalable design supports broader fraud prevention, contributing to a safer, 
 - **Interactive Dashboards**: Create customizable, data-rich dashboards for advanced analytics.
 
 Our vision is to make *Social Stock Scout* SEBI’s cornerstone tool for comprehensive market surveillance.
-
-![Roadmap Timeline](docs/images/image12.png)
-
-*Image: Timeline graphic outlining future enhancements and milestones.*
+![Future Roadmap](/assets/image5.png)
 
 ## Setup Instructions
 > **Note**: The prototype is not yet implemented; these instructions assume a Next.js-based setup for local development.
