@@ -1,21 +1,27 @@
-import { Activity, AlertTriangle, Eye, TrendingUp, Users, Shield } from "lucide-react";
+import { Activity, AlertTriangle, Eye, TrendingUp, Users, Shield, Search } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
 
 const Dashboard = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [analysisResult, setAnalysisResult] = useState(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+
   const threats = [
     {
       id: "TH-001",
-      user: "@stockguru_official",
-      risk: "High",
-      confidence: "95.2%",
-      pattern: "Pump & Dump",
-      engagement: "12.4K",
-      status: "Active"
+      user: "Account Analysis",
+      risk: "Variable",
+      confidence: "Enter username",
+      pattern: "Real-time Analysis",
+      engagement: "Live Data",
+      status: "Ready"
     },
     {
       id: "TH-002", 
-      user: "@cryptoking2024",
+      user: "Market Monitor",
       risk: "Medium",
       confidence: "78.9%",
       pattern: "Volume Spike",
@@ -24,7 +30,7 @@ const Dashboard = () => {
     },
     {
       id: "TH-003",
-      user: "@financeguru_mumbai",
+      user: "Sentiment Tracker",
       risk: "Low",
       confidence: "34.1%",
       pattern: "Sentiment Shift",
@@ -32,6 +38,32 @@ const Dashboard = () => {
       status: "Tracking"
     }
   ];
+
+  const handleAnalyze = () => {
+    if (!searchQuery.trim()) return;
+    
+    setIsAnalyzing(true);
+    
+    // Simulate analysis
+    setTimeout(() => {
+      const riskLevels = ["High", "Medium", "Low"];
+      const patterns = ["Pump & Dump", "Volume Manipulation", "Sentiment Analysis", "Bot Network", "Coordinated Activity"];
+      const randomRisk = riskLevels[Math.floor(Math.random() * riskLevels.length)];
+      const randomPattern = patterns[Math.floor(Math.random() * patterns.length)];
+      const confidence = (Math.random() * 40 + 60).toFixed(1); // 60-100%
+      const engagement = (Math.random() * 50 + 5).toFixed(1); // 5-55K
+      
+      setAnalysisResult({
+        user: searchQuery,
+        risk: randomRisk,
+        confidence: `${confidence}%`,
+        pattern: randomPattern,
+        engagement: `${engagement}K`,
+        timestamp: new Date().toLocaleTimeString()
+      });
+      setIsAnalyzing(false);
+    }, 2000);
+  };
 
   const getRiskColor = (risk: string) => {
     switch (risk) {
@@ -97,6 +129,65 @@ const Dashboard = () => {
               </div>
               <div className="text-2xl font-bold text-warning">$4.2M</div>
               <div className="text-sm text-muted-foreground">Protected Volume</div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Account Analysis Section */}
+        <div className="mb-8">
+          <Card className="bg-card border border-cyber-blue/20">
+            <CardHeader>
+              <CardTitle className="text-cyber-blue">Account Risk Analysis</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex space-x-4 mb-4">
+                <div className="flex-1">
+                  <Input
+                    placeholder="Enter social media username (e.g., @username)"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="bg-background border-border"
+                  />
+                </div>
+                <Button 
+                  onClick={handleAnalyze}
+                  disabled={!searchQuery.trim() || isAnalyzing}
+                  variant="cyber"
+                >
+                  <Search className="w-4 h-4 mr-2" />
+                  {isAnalyzing ? "Analyzing..." : "Analyze"}
+                </Button>
+              </div>
+              
+              {analysisResult && (
+                <div className="p-4 bg-secondary/20 border border-border rounded-lg">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center space-x-3">
+                      <div className={`w-3 h-3 rounded-full bg-${getRiskColor(analysisResult.risk)} animate-pulse`} />
+                      <div>
+                        <div className="font-semibold text-foreground">{analysisResult.user}</div>
+                        <div className="text-sm text-muted-foreground">Analyzed at {analysisResult.timestamp}</div>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className={`text-sm font-semibold text-${getRiskColor(analysisResult.risk)}`}>
+                        {analysisResult.risk} Risk
+                      </div>
+                      <div className="text-xs text-muted-foreground">{analysisResult.confidence} confidence</div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <div className="text-muted-foreground">Pattern Detected</div>
+                      <div className="font-medium">{analysisResult.pattern}</div>
+                    </div>
+                    <div>
+                      <div className="text-muted-foreground">Engagement</div>
+                      <div className="font-medium">{analysisResult.engagement}</div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </CardContent>
           </Card>
         </div>
@@ -209,21 +300,21 @@ const Dashboard = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
                       <Users className="w-4 h-4 text-muted-foreground" />
-                      <span className="text-sm">Instagram</span>
+                      <span className="text-sm">Social Media</span>
                     </div>
                     <span className="text-sm font-semibold text-cyber-blue">Active</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
                       <Users className="w-4 h-4 text-muted-foreground" />
-                      <span className="text-sm">Twitter</span>
+                      <span className="text-sm">Forums</span>
                     </div>
                     <span className="text-sm text-muted-foreground">Planned</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
                       <Users className="w-4 h-4 text-muted-foreground" />
-                      <span className="text-sm">Telegram</span>
+                      <span className="text-sm">News Sites</span>
                     </div>
                     <span className="text-sm text-muted-foreground">Planned</span>
                   </div>
