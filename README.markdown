@@ -119,39 +119,24 @@ Our vision is to make *Social Stock Scout* SEBI’s cornerstone tool for compreh
    - Obtain xAI API access (https://x.ai/api) for real-time fraud detection.
    - Install Recharts (`npm i recharts`) for visualizations.
 
-![Setup Guide](docs/images/image13.png)
-
-*Image: Screenshot of terminal commands for setup or Vercel deployment dashboard.*
 
 ## Contributing
 We welcome contributions to enhance the *Social Stock Scout Dashboard*. Please submit issues or pull requests to the repository. For feedback or collaboration, contact Team MarketGuard AI via the SEBI Hackathon platform.
 
-![Contribution Guide](docs/images/image14.png)
-
-*Image: Graphic encouraging contributions with a GitHub icon.*
 
 ## License
 This project is developed for the SEBI Hackathon 2025 and is not currently licensed for public use. All rights reserved by Team MarketGuard AI.
 
-![License Notice](docs/images/image15.png)
-
-*Image: Simple text-based graphic stating the license terms.*
 
 ## Acknowledgments
 - SEBI for hosting the Hackathon 2025.
 - xAI for providing API access details (https://x.ai/api).
 - Vercel for seamless deployment support.
 
-![Acknowledgments](docs/images/image16.png)
-
-*Image: Logos of SEBI, xAI, and Vercel, acknowledging their support.*
 
 ## Contact
 For inquiries or feedback, reach out to Team MarketGuard AI through the SEBI Hackathon platform or the repository’s issue tracker.
 
-![Contact Info](docs/images/image17.png)
-
-*Image: Contact form screenshot or icon representing communication channels.*
 
 ---
 
