@@ -56,7 +56,7 @@ const ImpactSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            CyberShield has demonstrated significant results in protecting market integrity 
+            MarketGuard AI has demonstrated significant results in protecting market integrity 
             and enabling rapid regulatory response to manipulation threats.
           </p>
         </div>
@@ -197,14 +197,14 @@ const ImpactSection = () => {
               <span className="text-cyber-blue font-semibold text-lg">Ready for Production</span>
             </div>
             <h4 className="text-2xl font-bold mb-4 text-foreground">
-              Deploy CyberShield for Your Market Surveillance Needs
+              Deploy MarketGuard AI for Your Market Surveillance Needs
             </h4>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Contact our team to integrate CyberShield's advanced AI-powered threat detection 
+              Contact our team to integrate MarketGuard AI's advanced threat detection 
               into your regulatory infrastructure and protect market integrity.
             </p>
             <div className="text-sm text-cyber-blue">
-              Built for SEBI Hackathon 2024 • Enterprise-Ready Architecture
+              Enterprise-Ready Architecture • Regulatory Compliance
             </div>
           </div>
         </div>

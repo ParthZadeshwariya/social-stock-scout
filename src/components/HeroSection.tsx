@@ -25,13 +25,13 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="flex items-center space-x-3 text-cyber-blue">
               <Shield className="w-8 h-8" />
-              <span className="text-lg font-semibold tracking-wider uppercase">CyberShield</span>
+              <span className="text-lg font-semibold tracking-wider uppercase">MarketGuard</span>
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-              <span className="text-white">Threat</span>{" "}
+              <span className="text-white">AI Market</span>{" "}
               <span className="bg-gradient-to-r from-cyber-blue to-cyber-teal bg-clip-text text-transparent">
-                Hunters
+                Surveillance
               </span>
             </h1>
             
@@ -113,15 +113,15 @@ const HeroSection = () => {
               </div>
             </div>
             
-            {/* Tech stack preview */}
+            {/* Performance metrics */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-card border border-border rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-cyber-blue">Groq AI</div>
-                <div className="text-xs text-muted-foreground">Ultra-fast inference</div>
+                <div className="text-2xl font-bold text-cyber-blue">Real-Time</div>
+                <div className="text-xs text-muted-foreground">Detection Engine</div>
               </div>
               <div className="bg-card border border-border rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-cyber-teal">LangChain</div>
-                <div className="text-xs text-muted-foreground">ML Pipeline</div>
+                <div className="text-2xl font-bold text-cyber-teal">Multi-Lang</div>
+                <div className="text-xs text-muted-foreground">NLP Processing</div>
               </div>
             </div>
           </div>

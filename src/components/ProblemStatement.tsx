@@ -8,7 +8,7 @@ const ProblemStatement = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-threat-high/10 border border-threat-high/20 rounded-full px-6 py-2 mb-6">
             <AlertTriangle className="w-5 h-5 text-threat-high" />
-            <span className="text-threat-high font-semibold">SEBI Hackathon Challenge</span>
+            <span className="text-threat-high font-semibold">Market Surveillance Challenge</span>
           </div>
           
           <h2 className="text-4xl font-bold mb-6">
@@ -80,7 +80,7 @@ const ProblemStatement = () => {
                   </div>
                   <div className="text-center p-4 bg-success/10 rounded-lg">
                     <div className="text-2xl font-bold text-success">3.2s</div>
-                    <div className="text-xs text-muted-foreground">CyberShield response time</div>
+                    <div className="text-xs text-muted-foreground">MarketGuard AI response time</div>
                   </div>
                 </div>
               </CardContent>

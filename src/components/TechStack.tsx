@@ -5,32 +5,32 @@ const TechStack = () => {
   const technologies = [
     {
       icon: Bot,
-      title: "Groq Inference + GPT-OSS-120B",
+      title: "AI Language Models",
       description: "Ultra-fast, low-latency inference with large-scale reasoning capabilities",
       color: "cyber-blue"
     },
     {
       icon: Zap,
-      title: "LangChain Pipeline", 
-      description: "End-to-end modular pipeline for seamless AI orchestration",
+      title: "Real-Time Pipeline", 
+      description: "End-to-end modular pipeline for seamless data orchestration",
       color: "cyber-teal"
     },
     {
       icon: Code,
-      title: "Instagram API Integration",
-      description: "Reverse engineered Instagram API for real-time post data extraction",
+      title: "Social Media Integration",
+      description: "Advanced API integration for real-time social media data extraction",
       color: "threat-medium"
     },
     {
       icon: Database,
-      title: "GitHub Actions Compute",
+      title: "Scalable Computing",
       description: "Leveraging distributed compute power for scalable processing",
       color: "success"
     },
     {
       icon: Shield,
-      title: "JSON Validation & Prompt Engineering",
-      description: "Structured outputs with strict schema validation and robust prompts",
+      title: "Data Validation & Processing",
+      description: "Structured outputs with strict schema validation and robust processing",
       color: "cyber-blue"
     },
     {
