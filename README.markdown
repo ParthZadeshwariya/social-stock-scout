@@ -143,5 +143,5 @@ For inquiries or feedback, reach out to Team MarketGuard AI through the SEBI Hac
 **Note**: The images (image1.png to image25.png) referenced in the original PowerPoint are not included in this README due to lack of access. The above placeholders (image1.png to image17.png) are suggested based on context. To include actual images:
 1. Capture screenshots of the dashboard from [https://social-stock-scout.lovable.app/](https://social-stock-scout.lovable.app/) or by running the Next.js app (from my first response).
 2. Create mock visuals (e.g., UI screenshots, charts, diagrams) using tools like Figma or PowerPoint.
-3. Place images in a `/docs/images` folder in the repository.
+3. Place images in a `/assets` folder in the repository.
 4. Update the README with actual image filenames if different from the placeholders.
